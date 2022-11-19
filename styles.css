@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: bisque;
+  background-color: #dbe8d8;
   box-sizing: border-box;
 }
 body {
@@ -15,25 +15,40 @@ body {
 }
 
 #board {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  /* width: 400px; */
   justify-content: center;
   gap: 10px;
 }
 
 .cell {
+  font-size: 6rem;
+  color: #0a7029;
   border: 1px solid;
   width: 100px;
   height: 100px;
   cursor: pointer;
+  text-align: center;
 }
 
-#game-over-area {
-  border: 2px solid;
-  padding: 30px;
-  height: 100px;
-  width: 300px;
+#game-over-box {
+  position: absolute;
+  background-color: #fede00;
+  padding: 60px;
+}
+#game-over-text {
+  background-color: #fede00;
+}
+button {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #0a7029;
+  color: white;
 }
 .hidden {
   display: none;
@@ -44,19 +59,11 @@ body {
 
 .X-hover:hover::after {
   content: "X";
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .O-hover:hover::after {
   content: "O";
-  opacity: 0.5;
-}
-
-.strike-row-1 {
-  background-color: greenyellow;
-}
-
-.green {
-  color: green;
+  opacity: 0.3;
 }
 
 footer {
@@ -68,4 +75,10 @@ footer {
 
 .fa-brands {
   font-size: 1.5rem;
+  transition: ease-in-out 0.2s;
+}
+
+.fa-brands:hover {
+  transform: scale(1.2);
+  color: #0a7029;
 }
