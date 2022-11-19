@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <div id="board">
+      <div data-index="1" class="cell"></div>
+      <div data-index="2" class="cell"></div>
+      <div data-index="3" class="cell"></div>
+      <div data-index="4" class="cell"></div>
+      <div data-index="5" class="cell"></div>
+      <div data-index="6" class="cell"></div>
+      <div data-index="7" class="cell"></div>
+      <div data-index="8" class="cell"></div>
+      <div data-index="9" class="cell"></div>
+    </div>
+    <div id="game-over-box" class="hidden">
+      <h2 id="game-over-text">The Winner is X</h2>
+      <button id="play-again">Play Again</button>
+    </div>
+    <footer>
+      <h6>by Mustafa 2022 for The Odin Project</h6>
+      <a href="https://github.com/mustafa-bhm"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
