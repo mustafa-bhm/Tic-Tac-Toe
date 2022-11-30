@@ -1,5 +1,3 @@
-console.log("js file");
-
 const cells = document.querySelectorAll(".cell");
 
 const player_X = "X";
@@ -43,7 +41,7 @@ function cellClick(event) {
   // to acces the html element that was cliked
   const cell = event.target;
   const cellNumber = cell.dataset.index;
-  console.log(cellNumber);
+
   // to check if ther is already a value inside the tile, if yes exit function
   if (cell.innerText != "") {
     return;
