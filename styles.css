@@ -82,3 +82,6 @@ footer {
   transform: scale(1.2);
   color: #0a7029;
 }
+.footer {
+  font-size: 0.8rem;
+}
